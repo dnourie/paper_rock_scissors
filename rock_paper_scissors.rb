@@ -9,7 +9,7 @@ puts "Do you want to play? Yes/No"
     begin
     puts "Which do you want: rock, paper, or scissors?"
     choice = gets.chomp.downcase
-    end until choice == "rock" || choice == "paper" || choice == "scissors"
+    end
     puts "You chose #{choice}"
     # The computer makes a choice
     items = ["rock", "paper", "scissors"]
@@ -30,7 +30,7 @@ puts "Do you want to play? Yes/No"
         puts "Rock crushes scissors. You win!"
       elsif choice == "scissors" and computer == "rock"
         puts "Rock crushes scissors. Computer wins!"
-      else
+      elsif choice == computer
         puts "Game tied!"
       end
     end
@@ -38,4 +38,3 @@ puts "Do you want to play? Yes/No"
   puts "Would you like to play again? Yes/No"
   response = gets.chomp.downcase
 end
-  
