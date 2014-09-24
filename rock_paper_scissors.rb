@@ -33,8 +33,8 @@ puts "Do you want to play? Yes/No"
       else
         puts "Game tied!"
       end
-    display_game_results(choice, computer)
     end
+  display_game_results(choice, computer)
   puts "Would you like to play again? Yes/No"
   response = gets.chomp.downcase
 end
